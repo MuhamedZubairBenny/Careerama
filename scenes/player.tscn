@@ -220,5 +220,11 @@ texture_filter = 1
 position = Vector2(-2, 13)
 sprite_frames = SubResource("SpriteFrames_vo3tt")
 animation = &"back_idle"
-frame_progress = 0.813974
+frame_progress = 0.933224
 offset = Vector2(0, -22)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = -508
+limit_top = -712
+limit_right = 834
+limit_bottom = 150

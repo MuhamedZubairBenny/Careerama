@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b6osc20ex5fst"]
+[gd_scene load_steps=29 format=3 uid="uid://b6osc20ex5fst"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_7wp2b"]
 [ext_resource type="Texture2D" uid="uid://dfntctu7ctc5b" path="res://assets/main char/Thandi_Phase_7.png" id="2_w77yp"]
@@ -6,19 +6,27 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_paen4"]
 radius = 6.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hydj6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_d88fe"]
 atlas = ExtResource("2_w77yp")
 region = Rect2(32, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_275xr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_qn2xp"]
 atlas = ExtResource("2_w77yp")
 region = Rect2(64, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7tpbo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ensw0"]
+atlas = ExtResource("2_w77yp")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpk7o"]
+atlas = ExtResource("2_w77yp")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lt8tg"]
 atlas = ExtResource("2_w77yp")
 region = Rect2(96, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_klewm"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_kn03q"]
 atlas = ExtResource("2_w77yp")
 region = Rect2(128, 32, 32, 32)
 
@@ -98,16 +106,22 @@ region = Rect2(96, 128, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hydj6")
+"texture": SubResource("AtlasTexture_d88fe")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_275xr")
+"texture": SubResource("AtlasTexture_qn2xp")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7tpbo")
+"texture": SubResource("AtlasTexture_ensw0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_klewm")
+"texture": SubResource("AtlasTexture_xpk7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lt8tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kn03q")
 }],
 "loop": true,
 "name": &"back_idle",
@@ -122,7 +136,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"back_walk",
-"speed": 4.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -206,5 +220,5 @@ texture_filter = 1
 position = Vector2(-2, 13)
 sprite_frames = SubResource("SpriteFrames_vo3tt")
 animation = &"back_idle"
-frame_progress = 0.397824
+frame_progress = 0.813974
 offset = Vector2(0, -22)

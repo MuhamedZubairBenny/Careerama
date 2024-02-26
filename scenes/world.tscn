@@ -4293,3 +4293,8 @@ layer_2/tile_data = PackedInt32Array(-851974, 196616, 3, -917487, 196616, 3, -91
 [node name="player" parent="." instance=ExtResource("10_1qvqy")]
 z_index = 1
 position = Vector2(-107, -134)
+
+[node name="World Boundary" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World Boundary"]
+polygon = PackedVector2Array(835, -324, 834, 19, -509, 19, -509, -553, -285, -553, -285, -713, 67, -712, 67, -553, 291, -553, 291, -713, 355, -713, 355, -553, 803, -553, 803, -713, 835, -713, 835, -324, 893, -324, 894, -880, -528, -880, -530, 172, 893, 172, 893, -324)

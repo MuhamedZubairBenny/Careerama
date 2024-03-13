@@ -219,8 +219,7 @@ shape = SubResource("CircleShape2D_paen4")
 texture_filter = 1
 position = Vector2(-2, 13)
 sprite_frames = SubResource("SpriteFrames_vo3tt")
-animation = &"back_idle"
-frame_progress = 0.148732
+animation = &"front_idle"
 offset = Vector2(0, -22)
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bs5415kbhuv6p"]
+[gd_scene load_steps=22 format=3 uid="uid://bs5415kbhuv6p"]
 
 [ext_resource type="Texture2D" uid="uid://cyrancm0kchfa" path="res://assets/buildings/Building.png" id="1_sehs4"]
 [ext_resource type="Texture2D" uid="uid://dl02rn5fkapvm" path="res://assets/tileset/ground.png" id="2_6hm1d"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://v3r6kq16fawp" path="res://assets/objects/props.png" id="8_kjxc0"]
 [ext_resource type="Texture2D" uid="uid://srp1fu0xp07y" path="res://assets/objects/Objects.png" id="9_cqfgh"]
 [ext_resource type="PackedScene" uid="uid://b6osc20ex5fst" path="res://scenes/player.tscn" id="10_1qvqy"]
+[ext_resource type="PackedScene" uid="uid://c40tc0h0pk7qg" path="res://scenes/npc_1.tscn" id="11_nsoc6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aae32"]
 texture = ExtResource("1_sehs4")
@@ -4005,3 +4006,7 @@ polygon = PackedVector2Array(835, -324, 834, 19, -509, 19, -509, -553, -285, -55
 
 [node name="Fountain Boundary" type="CollisionPolygon2D" parent="World Boundaries"]
 polygon = PackedVector2Array(-163, -495, -55, -495, -55, -387, -163, -387)
+
+[node name="npc_1" parent="." instance=ExtResource("11_nsoc6")]
+z_index = 1
+position = Vector2(-19, -211)

@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh27pgfgrpdk2"]
+
+[ext_resource type="Texture2D" uid="uid://nppvg62wjvgx" path="res://assets/other/Chat_background.png" id="1_5s5g4"]
+[ext_resource type="Script" path="res://dialogue/dialogueplayer.gd" id="1_8a52h"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_8a52h")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = -35.0
+offset_top = -47.0
+offset_right = 35.0
+offset_bottom = -7.0
+texture = ExtResource("1_5s5g4")
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 62.0
+offset_bottom = 24.0
+scale = Vector2(0.4, 0.4)
+text = "Name:"
+
+[node name="Text" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 9.0
+offset_right = 167.0
+offset_bottom = 81.0
+scale = Vector2(0.3, 0.3)
+text = "Chatting"
